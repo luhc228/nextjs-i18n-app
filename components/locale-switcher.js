@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import {FormattedMessage} from 'react-intl';
 
 export default function LocaleSwitcher() {
   const router = useRouter()
@@ -8,7 +9,7 @@ export default function LocaleSwitcher() {
 
   return (
     <div>
-      <p>Locale switcher:</p>
+      <p><FormattedMessage id="localeSwitcher" />:</p>
       <ul>
         {otherLocales.map((locale) => {
           const { pathname, query, asPath } = router
