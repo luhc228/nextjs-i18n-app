@@ -5,7 +5,7 @@ import { messages } from '../i18n';
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
   const { locale, defaultLocale } = router
-
+  console.log('MyApp', 'locale', locale);
   return (
     <IntlProvider messages={messages[locale]} locale={locale} defaultLocale={defaultLocale}>
       <Component {...pageProps} />
