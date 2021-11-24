@@ -8,7 +8,7 @@ export default function IndexPage(props) {
   console.log({ intl });
 
   const router = useRouter()
-  console.log(router);
+  console.log({router});
   const { locale, locales, defaultLocale } = router
 
   return (
